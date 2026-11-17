@@ -1,0 +1,492 @@
+{
+  "_meta": {
+    "year": 2027,
+    "status": "provisional",
+    "note": "临时：IRS 尚未发布 2027 年通胀调整（截至 2026-10-15），整份沿用 2026 年参数。IRS 发布 Rev. Proc. 后逐项替换并把 status 改为 official。纽约州 2027 起低档税率另有下调（NY Tax Law §601(c)(1)(viii)），也待替换。"
+  },
+  "us_federal": {
+    "standard_deduction_single": {
+      "value": 16100,
+      "source": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "note": "Rev. Proc. 2025-32 §4.14(1)，Unmarried Individuals"
+    },
+    "ordinary_brackets_single": {
+      "value": [
+        [
+          12400,
+          0.1
+        ],
+        [
+          50400,
+          0.12
+        ],
+        [
+          105700,
+          0.22
+        ],
+        [
+          201775,
+          0.24
+        ],
+        [
+          256225,
+          0.32
+        ],
+        [
+          640600,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "source": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "note": "Rev. Proc. 2025-32 §4.01 Table 3，§1(j)(2)(C) 单身"
+    },
+    "ltcg_brackets_single": {
+      "value": [
+        [
+          49450,
+          0.0
+        ],
+        [
+          545500,
+          0.15
+        ],
+        [
+          null,
+          0.2
+        ]
+      ],
+      "source": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "note": "Rev. Proc. 2025-32 §4.03，All Other Individuals：0% 上限 $49,450，15% 上限 $545,500"
+    },
+    "niit_rate": {
+      "value": 0.038,
+      "source": "https://www.law.cornell.edu/uscode/text/26/1411",
+      "note": "IRC §1411(a)(1)"
+    },
+    "niit_threshold_single": {
+      "value": 200000,
+      "source": "https://www.law.cornell.edu/uscode/text/26/1411",
+      "note": "IRC §1411(b)(3)，法定金额，不随通胀调整"
+    },
+    "niit_dual_status_resident_portion_only": {
+      "value": true,
+      "source": "https://www.law.cornell.edu/cfr/text/26/1.1411-2",
+      "note": "Treas. Reg. §1.1411-2(a)(2)(ii)：双重身份年只就居民期间收入计 NIIT，门槛不按比例缩小"
+    },
+    "capital_loss_ordinary_offset_limit": {
+      "value": 3000,
+      "source": "https://www.law.cornell.edu/uscode/text/26/1211",
+      "note": "IRC §1211(b)；超出部分按 §1212(b) 保留长短期性质结转"
+    },
+    "dual_status_standard_deduction_allowed": {
+      "value": false,
+      "source": "https://www.irs.gov/publications/p519",
+      "note": "Pub 519 第 6 章 Restrictions for Dual-Status Taxpayers；IRC §63(c)(6)(B)"
+    },
+    "nra_capital_gains_rate": {
+      "value": 0.3,
+      "source": "https://www.law.cornell.edu/uscode/text/26/871",
+      "note": "IRC §871(a)(2)：在美 ≥183 天的非居民，美国来源净资本利得按 30%（中美协定无优惠税率）"
+    },
+    "nra_183_day_threshold": {
+      "value": 183,
+      "source": "https://www.law.cornell.edu/uscode/text/26/871",
+      "note": "IRC §871(a)(2)"
+    },
+    "nra_183_count_exempt_days": {
+      "value": true,
+      "source": "https://www.law.cornell.edu/cfr/text/26/301.7701(b)-3",
+      "note": "豁免天数只在 §7701(b) 居民判定中不计（Reg. §301.7701(b)-3(a)：for purposes of section 7701(b)）；§871(a)(2) 按实际在美天数累加（Reg. §1.871-7(d)(3)）"
+    },
+    "nra_183_dual_status_counts_full_year": {
+      "value": true,
+      "source": "https://www.law.cornell.edu/cfr/text/26/1.871-7",
+      "note": "Reg. §1.871-7(d)(3)(i)：身份在年中变化时按整个纳税年度计算在美天数"
+    },
+    "nra_capital_loss_carryover_allowed": {
+      "value": false,
+      "source": "https://www.law.cornell.edu/cfr/text/26/1.871-7",
+      "note": "Reg. §1.871-7(d)(4)：非居民期间不得使用 §1212 结转；超过收益的亏损不予考虑（Pub 519 同）"
+    },
+    "wash_sale_window_days": {
+      "value": 30,
+      "source": "https://www.law.cornell.edu/uscode/text/26/1091",
+      "note": "IRC §1091(a)：卖出前后各 30 天"
+    },
+    "long_term_holding_rule": {
+      "value": "(买入日 + 1 天) + 1 年 当天或之后卖出为长期",
+      "source": "https://www.irs.gov/publications/p550",
+      "note": "Pub 550：持有期从买入次日起算，卖出日计入；持有超过 1 年为长期（IRC §1222(3)）"
+    }
+  },
+  "us_residency": {
+    "spt_min_current_year_days": {
+      "value": 31,
+      "source": "https://www.law.cornell.edu/uscode/text/26/7701",
+      "note": "IRC §7701(b)(3)(A)(i)"
+    },
+    "spt_threshold": {
+      "value": 183,
+      "source": "https://www.law.cornell.edu/uscode/text/26/7701",
+      "note": "IRC §7701(b)(3)(A)(ii)"
+    },
+    "spt_weights": {
+      "value": [
+        "1",
+        "1/3",
+        "1/6"
+      ],
+      "source": "https://www.law.cornell.edu/uscode/text/26/7701",
+      "note": "今年、去年、前年天数的乘数；分数不四舍五入（Reg. §301.7701(b)-1(c)(1)）"
+    },
+    "student_exempt_calendar_years": {
+      "value": 5,
+      "source": "https://www.law.cornell.edu/uscode/text/26/7701",
+      "note": "IRC §7701(b)(5)(E)(ii)：F/J/M/Q 学生作为豁免个人的日历年上限"
+    },
+    "fyc_consecutive_days": {
+      "value": 31,
+      "source": "https://www.law.cornell.edu/uscode/text/26/7701",
+      "note": "IRC §7701(b)(4)(A)(iv)(I)；豁免日不计（§7701(b)(4)(D)）"
+    },
+    "fyc_presence_ratio": {
+      "value": 0.75,
+      "source": "https://www.law.cornell.edu/uscode/text/26/7701",
+      "note": "IRC §7701(b)(4)(A)(iv)(II)"
+    },
+    "fyc_absence_grace_days": {
+      "value": 5,
+      "source": "https://www.law.cornell.edu/cfr/text/26/301.7701(b)-4",
+      "note": "Reg. §301.7701(b)-4(c)(3)(iv)：最多 5 天离境视为在美，只用于 75% 测试"
+    },
+    "fyc_extension_pay_as_nonresident": {
+      "value": true,
+      "source": "https://www.law.cornell.edu/cfr/text/26/301.7701(b)-4",
+      "note": "Reg. §301.7701(b)-4(c)(3)(v)(A)；Pub 519：用 Form 4868 延期时须先按全年非居民计算并缴税"
+    }
+  },
+  "us_reporting": {
+    "fbar_aggregate_threshold": {
+      "value": 10000,
+      "source": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "note": "境外金融账户合计任一时点超过 $10,000"
+    },
+    "form8938_single_us_year_end": {
+      "value": 50000,
+      "source": "https://www.law.cornell.edu/cfr/text/26/1.6038D-2",
+      "note": "单身、住在美国：年末超过 $50,000"
+    },
+    "form8938_single_us_any_time": {
+      "value": 75000,
+      "source": "https://www.law.cornell.edu/cfr/text/26/1.6038D-2",
+      "note": "单身、住在美国：年内任一时点超过 $75,000"
+    },
+    "form5471_ownership_threshold": {
+      "value": 0.1,
+      "source": "https://www.irs.gov/instructions/i5471",
+      "note": "持有境外公司 10% 以上；Category 3 可在成为美国人当天触发"
+    }
+  },
+  "ny_state": {
+    "standard_deduction_single": {
+      "value": 8000,
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "IT-2105-I (2026) Standard deduction table"
+    },
+    "brackets_single": {
+      "value": [
+        [
+          8500,
+          0.039,
+          0
+        ],
+        [
+          11700,
+          0.044,
+          332
+        ],
+        [
+          13900,
+          0.0515,
+          473
+        ],
+        [
+          80650,
+          0.054,
+          586
+        ],
+        [
+          215400,
+          0.059,
+          4191
+        ],
+        [
+          1077550,
+          0.0685,
+          12141
+        ],
+        [
+          5000000,
+          0.0965,
+          71198
+        ],
+        [
+          25000000,
+          0.103,
+          449714
+        ],
+        [
+          null,
+          0.109,
+          2509714
+        ]
+      ],
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "IT-2105-I (2026) p.10；NY Tax Law §601(c)(1)(vii)。[上限, 税率, 本档起点的税额（税表原值，已取整）]"
+    },
+    "recapture_flat_rate_start_agi": {
+      "value": 107650,
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "Tax computation worksheet 7：NYAGI 超过此数开始回收低档优惠"
+    },
+    "recapture_flat_rate": {
+      "value": 0.059,
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "Worksheet 7：应税所得 ≤ $215,400 时回收到统一 5.90%"
+    },
+    "recapture_ws7_taxable_income_cap": {
+      "value": 215400,
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "Worksheet 7 适用于应税所得 ≤ $215,400"
+    },
+    "recapture_phase_in": {
+      "value": 50000,
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "各 worksheet 中 NYAGI 超出部分 ÷ $50,000（四位小数）"
+    },
+    "recapture_tiers": {
+      "value": [
+        {
+          "agi_floor": 215400,
+          "ti_floor": 215400,
+          "ti_cap": 1077550,
+          "base": 567,
+          "increment": 2047
+        },
+        {
+          "agi_floor": 1077550,
+          "ti_floor": 1077550,
+          "ti_cap": 5000000,
+          "base": 2614,
+          "increment": 30172
+        },
+        {
+          "agi_floor": 5000000,
+          "ti_floor": 5000000,
+          "ti_cap": null,
+          "base": 32786,
+          "increment": 32500
+        }
+      ],
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "Tax computation worksheets 8/9/10（单身）：税 = 税表 + Recapture Base + Incremental Benefit × min(NYAGI−agi_floor, 50,000)/50,000"
+    },
+    "top_flat_agi": {
+      "value": 25000000,
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "Worksheet 11：NYAGI 超过 $25,000,000 时全部按 10.9%"
+    },
+    "capital_gains_as_ordinary": {
+      "value": true,
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "纽约州从联邦 AGI 起算，资本利得与普通收入同税率"
+    }
+  },
+  "nyc": {
+    "brackets_single": {
+      "value": [
+        [
+          12000,
+          0.03078,
+          0
+        ],
+        [
+          25000,
+          0.03762,
+          369
+        ],
+        [
+          50000,
+          0.03819,
+          858
+        ],
+        [
+          null,
+          0.03876,
+          1813
+        ]
+      ],
+      "source": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "note": "IT-2105-I (2026) p.10 New York City tax rates，单身。[上限, 税率, 本档起点的税额（税表原值）]"
+    }
+  },
+  "cn_iit": {
+    "comprehensive_brackets": {
+      "value": [
+        [
+          36000,
+          0.03,
+          0
+        ],
+        [
+          144000,
+          0.1,
+          2520
+        ],
+        [
+          300000,
+          0.2,
+          16920
+        ],
+        [
+          420000,
+          0.25,
+          31920
+        ],
+        [
+          660000,
+          0.3,
+          52920
+        ],
+        [
+          960000,
+          0.35,
+          85920
+        ],
+        [
+          null,
+          0.45,
+          181920
+        ]
+      ],
+      "source": "https://www.gov.cn/gongbao/content/2019/content_5386991.htm",
+      "note": "[上限, 税率, 速算扣除数]；税率表见个人所得税法第三条附表，速算扣除数见国家税务总局公告2018年第61号附件"
+    },
+    "equity_incentive_separate_valid_until": {
+      "value": "2027-12-31",
+      "source": "https://www.gov.cn/zhengce/zhengceku/202308/content_6900234.htm",
+      "note": "财政部 税务总局公告2023年第25号：股权激励不并入综合所得，全额单独适用综合所得税率表；一年内多次合并计算"
+    },
+    "equity_incentive_listed_min_ownership": {
+      "value": 0.3,
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194079/content.html",
+      "note": "国税函〔2009〕461号 第七条(一)：上市公司对控股企业持股不低于 30%；第六条(二)：境外上市公司的境内机构须备案，否则不适用单独计税"
+    },
+    "comprehensive_basic_deduction": {
+      "value": 60000,
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5193028/content.html",
+      "note": "个人所得税法第六条：综合所得每年减除费用 60,000 元（未备案、并入综合所得时使用）"
+    },
+    "property_transfer_rate": {
+      "value": 0.2,
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5193028/content.html",
+      "note": "个人所得税法第三条(三)；原值：RS 为归属日收盘价、ESPP 为购买日收盘价（财税〔2005〕35号 二(三)）；合理税费可扣（实施条例第十六条）"
+    },
+    "property_transfer_cost_basis_source": {
+      "value": "vest_or_purchase_close",
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203004/content.html",
+      "note": "财税〔2005〕35号 二(三)：再转让时高于购买日公平市场价的差额按财产转让所得"
+    },
+    "property_transfer_per_sale_rule": {
+      "value": "per_sale",
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c100010/c5194444/content.html",
+      "note": "实施条例第十七条：按一次转让计算（保守口径，亏损那笔不交税、不抵其他）"
+    },
+    "property_transfer_annual_netting_rule": {
+      "value": "annual_netting",
+      "source": "https://finance.sina.cn/2025-08-04/detail-infivmit0158866.d.html",
+      "note": "12366 北京纳税服务中心口径（新闻转述，非成文规定）：同一纳税年度内境外股票盈亏互抵，不跨年结转。工具默认采用"
+    },
+    "dividend_rate": {
+      "value": 0.2,
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5193028/content.html",
+      "note": "个人所得税法第三条(三)、第六条(六)：按每次收入额全额计税"
+    },
+    "us_dividend_treaty_rate": {
+      "value": 0.1,
+      "source": "https://www.irs.gov/pub/irs-trty/china.pdf",
+      "note": "中美税收协定第九条第2款：股息来源国税率不超过 10%；超出部分不得在中国抵免（2020年第3号公告 四(二)）"
+    },
+    "foreign_tax_credit_rule": {
+      "value": "min(美国实缴, 协定税率×毛额, 中国应纳税额)",
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207136/content.html",
+      "note": "财政部 税务总局公告2020年第3号 三、四、六条；须提供境外纳税凭证"
+    },
+    "fx_rule_withholding": {
+      "value": "申报月上一月最后一日人民币汇率中间价",
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c100010/c5194444/content.html",
+      "note": "实施条例第三十二条第一句：单位扣缴（RS 归属、ESPP 购买）"
+    },
+    "fx_rule_annual_filing": {
+      "value": "所得年度最后一日人民币汇率中间价",
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c100010/c5194444/content.html",
+      "note": "实施条例第三十二条第二句：年度终了后补缴税款部分；境外所得适用哪一句全国未明确，可在界面改"
+    },
+    "foreign_income_filing_window": {
+      "value": "次年 3 月 1 日至 6 月 30 日",
+      "source": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5193028/content.html",
+      "note": "个人所得税法第十三条第三款；2020年第3号公告第七条"
+    }
+  },
+  "filing_deadlines": {
+    "us_resident_1040": {
+      "value": "04-15",
+      "source": "https://www.irs.gov/filing/individuals/when-to-file",
+      "note": "居民和双重身份年：次年 4 月 15 日交 1040；遇周末或法定假日顺延到下一个工作日"
+    },
+    "us_nonresident_no_wages": {
+      "value": "06-15",
+      "source": "https://www.irs.gov/publications/p519",
+      "note": "非居民、没有被预扣税的工资：次年 6 月 15 日交 1040-NR；不用报税时只交 Form 8843，同一天"
+    },
+    "us_nonresident_wages": {
+      "value": "04-15",
+      "source": "https://www.irs.gov/publications/p519",
+      "note": "非居民、有被预扣税的工资：次年 4 月 15 日交 1040-NR"
+    },
+    "fbar": {
+      "value": "04-15",
+      "source": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "note": "美国税务居民年份、境外账户合计超过 $10,000：次年 4 月 15 日交 FBAR，自动延期到 10 月 15 日"
+    },
+    "fbar_extended": {
+      "value": "10-15",
+      "source": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "note": "FBAR 自动延期后的截止日，不用申请"
+    },
+    "fyc_extension_4868": {
+      "value": "04-15",
+      "source": "https://www.irs.gov/publications/p519",
+      "note": "选 First-Year Choice 的年份：满足次年的实际居住测试（SPT）之前不能交 1040 和选择声明；次年 4 月 15 日前交 Form 4868 申请延期到 10 月 15 日，并按全年非居民估算的税款缴清（可用 1040-NR 估算）。Pub 519，First-Year Choice 一节"
+    },
+    "fyc_extended": {
+      "value": "10-15",
+      "source": "https://www.irs.gov/publications/p519",
+      "note": "Form 4868 延期后的申报截止日：满足次年 SPT 后提交 1040 和 First-Year Choice 声明（Pub 519）"
+    },
+    "cn_overseas_income_start": {
+      "value": "03-01",
+      "source": "https://hankunlaw.com/portal/article/index/cid/8/id/14298.html",
+      "note": "中国税务居民的境外所得：次年 3 月 1 日至 6 月 30 日申报（个人所得税法 2018 年修正后的规定；此链接为律所解读，不是官方原文）"
+    },
+    "cn_overseas_income_end": {
+      "value": "06-30",
+      "source": "https://hankunlaw.com/portal/article/index/cid/8/id/14298.html",
+      "note": "境外所得申报窗口的最后一天（同上，律所解读）"
+    }
+  }
+}

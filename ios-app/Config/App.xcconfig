@@ -1,0 +1,7 @@
+// 共用的构建设置。个人的值写在 Local.xcconfig（gitignore），会覆盖这里；见 Local.example.xcconfig。
+FF_BUNDLE_PREFIX = com.example.familyfinance
+FF_BUNDLE_ID = $(FF_BUNDLE_PREFIX)
+FF_APP_GROUP = group.$(FF_BUNDLE_PREFIX)
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"

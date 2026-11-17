@@ -1,0 +1,6 @@
+// 复制成 Local.xcconfig（gitignore）再填。
+// DEVELOPMENT_TEAM：团队 id，免费 Apple ID（Personal Team）也行：
+//   plutil -p ~/Library/Preferences/com.apple.dt.Xcode.plist | grep teamID
+// FF_BUNDLE_PREFIX：只有自己用的反向域名前缀。免费团队每 7 天最多注册 10 个 App ID（这里用 2 个：app 和小组件），定了别改。
+DEVELOPMENT_TEAM = ABCDE12345
+FF_BUNDLE_PREFIX = io.github.yourname.familyfinance

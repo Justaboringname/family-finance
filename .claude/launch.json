@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "family-finance",
+      "url": "http://127.0.0.1:8501",
+      "port": 8501
+    }
+  ]
+}

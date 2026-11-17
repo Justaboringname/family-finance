@@ -1,0 +1,4 @@
+# 打包版只装网站运行需要的包（不含 yfinance：副本固定离线；不含 pytest）。
+streamlit==1.66.0
+pandas==3.0.6
+python-dateutil==2.9.0.post0

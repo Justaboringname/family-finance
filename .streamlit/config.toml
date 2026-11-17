@@ -1,0 +1,58 @@
+# 只在本机运行，不上报任何使用数据
+[browser]
+gatherUsageStats = false
+
+[server]
+address = "127.0.0.1"
+port = 8501
+headless = true
+
+[client]
+toolbarMode = "minimal"
+
+# 界面主题：「私人账簿」，浅色 / 深色两套，背景都是中性灰，默认跟随系统外观。
+# 字体只用系统自带字体，不从网上加载。资产类别的分类色已用 dataviz 校验脚本验证。
+[theme]
+font = "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', 'Hiragino Sans GB', 'Segoe UI', 'Microsoft YaHei', sans-serif"
+headingFont = "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+codeFont = "ui-monospace, 'SF Mono', Menlo, monospace"
+baseRadius = "8px"
+buttonRadius = "8px"
+showWidgetBorder = true
+showSidebarBorder = false
+
+[theme.light]
+primaryColor = "#234b7c"
+backgroundColor = "#f2f2f2"
+secondaryBackgroundColor = "#eaeaea"
+textColor = "#1c1a16"
+linkColor = "#234b7c"
+borderColor = "#dcd6c9"
+dataframeBorderColor = "#e6e1d5"
+dataframeHeaderBackgroundColor = "#eaeaea"
+redColor = "#b3261e"
+greenColor = "#17703f"
+blueColor = "#234b7c"
+chartCategoricalColors = ["#2e5794", "#ad7a17", "#129390", "#bf623d", "#884783"]
+
+[theme.light.sidebar]
+backgroundColor = "#eaeaea"
+secondaryBackgroundColor = "#e3e3e3"
+
+[theme.dark]
+primaryColor = "#8fb1e0"
+backgroundColor = "#1d1d1d"
+secondaryBackgroundColor = "#252525"
+textColor = "#ede9e0"
+linkColor = "#8fb1e0"
+borderColor = "#36332d"
+dataframeBorderColor = "#2c2a26"
+dataframeHeaderBackgroundColor = "#222222"
+redColor = "#f0786c"
+greenColor = "#5cbf86"
+blueColor = "#8fb1e0"
+chartCategoricalColors = ["#5581c1", "#b48226", "#129390", "#c66843", "#9b5896"]
+
+[theme.dark.sidebar]
+backgroundColor = "#171717"
+secondaryBackgroundColor = "#131313"
